@@ -1,9 +1,29 @@
-h1 {
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+    margin: 2px;
+  }
+
+  h1 {
     padding: 2px;
     color: white;
     text-align: left;
     font-size: 2em;
     font-family: 'pixer';
+}
+
+div {
+    margin-left: 5px;
 }
 
 #main {
@@ -71,22 +91,14 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: auto;
+    margin-left: 0px;
     font-size: 14px;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  main {
-    flex: 1;
-  }
+body > footer {
+    margin-left: 0px;
+}
+
 
   
 @font-face {
