@@ -61,17 +61,34 @@ a:visited {
 }
 
 footer {
-    position: fixed;
+    background-color: yellow;
+    color: black;
+    font-size: large;
+    font-family: 'dotto';
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
     bottom: 0;
     width: 100%;
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    font-family: Arial, sans-serif;
+    margin-top: auto;
     font-size: 14px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+
+  
 @font-face {
     font-family: pixer;
     src: url(fonts/Pixer-Regular.woff);
